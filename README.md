@@ -8,7 +8,8 @@ A bare-bones sails application extended to support:
 * default login screen
 
 ## Heroku Setup
-* __Heroku set to existing remote__: ```$ heroku git:remote -a <heroku_repo_name>```
+* __Heroku set git to existing remote__: ```$ heroku git:remote -a <heroku_repo_name>```
+* __Heroku set up redis:__ ```$ heroku addons:create heroku-redis:premium-0```
 
 ## Heroku Config Variables
 * __ADMIN_EMAIL__: ```heroku config:set ADMIN_EMAIL=<ADMIN_EMAIL>```
