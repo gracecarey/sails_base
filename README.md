@@ -1,5 +1,5 @@
 # sails_base
-A bare-bones sails application modified with:
+A bare-bones sails application extended to support:
 * sass
 * bourbon
 * bitters
