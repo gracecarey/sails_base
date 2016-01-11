@@ -31,7 +31,16 @@ module.exports.policies = {
     register: [ 'passport', 'isAdminAuth'],
   },
   PostController: {
-    '*': [ 'passport', 'isAdminAuth'],
+    '*': false,
+    'find': ['passport'],
+    'findOne': ['passport'],
+    'create': ['passport', 'isAdminAuth'],
+    'udpate': ['passport', 'isAdminAuth'],
+    'destroy': ['passport', 'isAdminAuth'],
+    'remove': ['passport', 'isAdminAuth'],
+    'findOne': ['passport'],
+    'find': ['passport'],
+    'findOne': ['passport', 'isAdminAuth'],
   }
   /***************************************************************************
   *                                                                          *
