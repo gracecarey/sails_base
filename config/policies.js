@@ -29,6 +29,9 @@ module.exports.policies = {
   AuthController: {
     '*': [ 'passport'],
     register: [ 'passport', 'isAdminAuth'],
+  },
+  PostController: {
+    '*': [ 'passport', 'isAdminAuth'],
   }
   /***************************************************************************
   *                                                                          *
