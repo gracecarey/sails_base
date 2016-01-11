@@ -1,0 +1,12 @@
+<section>
+  <%if (typeof user !== 'undefined') { %>
+    <div>
+      <b>Logged in as: </b>
+      <span><%= user.username %></span>
+    </div>
+  <% } else {%>
+    <div>
+      <a href="/login">Log in</a>
+    </div>
+  <% } %>
+</section>
