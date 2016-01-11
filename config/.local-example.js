@@ -5,7 +5,6 @@
 module.exports = {
    permissions : {
     adminUser : {
-      username : "admin",
       email : "admin@fake.com",
       password :"admin123"
     }

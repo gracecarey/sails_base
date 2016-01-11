@@ -16,7 +16,6 @@
  * http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.policies.html
  */
 
-
 module.exports.policies = {
 
   /***************************************************************************
@@ -26,8 +25,11 @@ module.exports.policies = {
   *                                                                          *
   ***************************************************************************/
 
-  '*': [ 'passport', /* your auth dependant policies go here */ ]
-
+  '*': [ 'passport', /* your auth dependant policies go here */ ],
+  AuthController: {
+    '*': [ 'passport', /* your auth dependant policies go here */ ],
+    register: [ 'passport', 'isAdminAuth'],
+  }
   /***************************************************************************
   *                                                                          *
   * Here's an example of mapping some policies to run before a controller    *

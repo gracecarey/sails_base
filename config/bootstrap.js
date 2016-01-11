@@ -12,7 +12,7 @@ var crypto    = require('crypto');
 
 module.exports.bootstrap = function(cb) {
 
-  admin_username = sails.config.permissions.adminUser.username
+  admin_username = "admin"
   admin_email = sails.config.permissions.adminUser.email
   admin_password = sails.config.permissions.adminUser.password
 
