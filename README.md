@@ -1,6 +1,10 @@
 # sails_base
-
-a [Sails](http://sailsjs.org) application
+A bare-bones sails application modified with:
+* sass
+* bourbon
+* bitters
+* session authentication
+* default login screen
 
 ## Heroku Branch Setup
 * __Heroku set remote__: ```$ heroku git:remote -a <heroku_repo_name>```
