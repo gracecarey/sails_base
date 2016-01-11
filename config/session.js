@@ -16,12 +16,12 @@ module.exports.session = {
 
   /***************************************************************************
   *                                                                          *
-  * Session secret is automatically generated when your new app is created   *
+  * Session secret must be created manually and added environment variables  *
   * Replace at your own risk in production-- you will invalidate the cookies *
   * of your users, forcing them to log in again.                             *
   *                                                                          *
   ***************************************************************************/
-  secret: '889e416b7c9458807450f637aa4a949f',
+  secret: process.env.SESSION_SECRET,
 
 
   /***************************************************************************
