@@ -1,5 +1,6 @@
 # sails_base
 A bare-bones sails application extended to support:
+* heroku environment integration
 * sass
 * bourbon
 * bitters
